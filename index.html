@@ -1,8 +1,9 @@
-﻿<!Doctype html>
+<!Doctype html>
 <html>
 <head>
 	<title>Menu CSS jQuery</title>
 	<meta charset="utf-8">
+	<meta name="author" content="hallan 2L11">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
 	$(document).ready(function(){
@@ -22,6 +23,9 @@
 			});
 	});
 	</script>
+	
+
+	
 
 	<style>
 		body{background:black;
@@ -55,11 +59,21 @@
 			}
 		#menu ul li a{
 			float:left;
-			background:url("images/Degrade_img.jpg") repeat-x left bottom;
+			background:url("Degrade_img.jpg") repeat-x left bottom;
 			color:#000000;
             height:10px;
 			}
 	</style>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+
 </head>
 <body>
 	<div id="menu">
@@ -71,5 +85,31 @@
 			<li><a href="#">Contato</a></li>
 		</ul>
 	</div>
+	
+	<br><br><br><br>
+	<button>Start Animation</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+    });
+});
+</script>
+
 </body>
+<br><br><br><br><br><br><br>
+
+	
+<p style="color:blue">Clique aqui.</p>
+<p style="color:blue">Clique de novo</p>
+<p style="color:blue">Clique aqui para desaparecer!</p>
+
 </html>
